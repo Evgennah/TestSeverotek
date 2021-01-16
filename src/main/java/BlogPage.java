@@ -1,12 +1,12 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class BlogPage {
 
     private WebDriver driver;
 
     public BlogPage(WebDriver driver) {
-
         this.driver = driver;
     }
 
@@ -17,11 +17,13 @@ public class BlogPage {
         return driver.findElement(newEntry).getText();
     }
 
-    void clickEntryChangeButton() {
+    public void newEntryTitleVerifying() {
+        Assert.assertEquals(this.getNewEntryName(), "Entry Title" + EntryPage.randomNumber, "There is no new entry on the page");
+    }
+
+    public void clickEntryChangeButton() {
         driver.findElement(entriesChangeButton).click();
     }
 
-
-
-
 }
+

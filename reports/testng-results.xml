@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-16T19:09:41 GMT+06:00" name="Default Suite" finished-at="2021-01-16T19:09:50 GMT+06:00" duration-ms="9247">
+    <groups>
+    </groups>
+    <test started-at="2021-01-16T19:09:41 GMT+06:00" name="TestSeverotek" finished-at="2021-01-16T19:09:50 GMT+06:00" duration-ms="9247">
+      <class name="MainTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MainTest@101df177]" started-at="2021-01-16T19:09:41 GMT+06:00" name="setUp" finished-at="2021-01-16T19:09:45 GMT+06:00" duration-ms="4070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="bigPositiveTest()[pri:0, instance:MainTest@101df177]" started-at="2021-01-16T19:09:45 GMT+06:00" name="bigPositiveTest" finished-at="2021-01-16T19:09:49 GMT+06:00" duration-ms="4528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bigPositiveTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MainTest@101df177]" started-at="2021-01-16T19:09:49 GMT+06:00" name="tearDown" finished-at="2021-01-16T19:09:50 GMT+06:00" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MainTest -->
+    </test> <!-- TestSeverotek -->
+  </suite> <!-- Default Suite -->
+</testng-results>

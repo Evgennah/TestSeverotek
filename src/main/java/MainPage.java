@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class MainPage {
 
@@ -16,9 +17,13 @@ public class MainPage {
         return driver.findElement(heading).getText();
     }
 
-    void clickAddEntry() {
+    public void headingVerifying() {
+        Assert.assertEquals(this.getMainPageHeading(), "Панель управления", "There is no heading 'Панель управления' on the page");
+    }
+
+    public void clickAddEntry() {
         driver.findElement(addEntryButton).click();
     }
 
-
 }
+

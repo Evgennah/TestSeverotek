@@ -13,28 +13,27 @@ public class LoginPage {
     private By passwordField = By.xpath("//*[@id=\"id_password\"]");
     private By submitButton = By.xpath("//*[@id=\"login-form\"]/div[3]/input");
 
-    void enterUserName(String username) {
+    public void open() {
+        driver.get("https://igorakintev.ru/admin/");
+    }
+
+    private void enterUserName(String username) {
         driver.findElement(userNameField).sendKeys(username);
-
     }
 
-    void enterPassword(String password) {
+    private void enterPassword(String password) {
         driver.findElement(passwordField).sendKeys(password);
-
     }
 
-    void  clickSubmit() {
+    private void clickSubmit() {
         driver.findElement(submitButton).click();
-
     }
 
-    void login(String username, String password) {
+    public void login(String username, String password) {
         this.enterUserName(username);
         this.enterPassword(password);
         this.clickSubmit();
     }
 
-    boolean atPage() {
-        return driver.getTitle().equals("");
-    }
 }
+
